@@ -1,8 +1,9 @@
 package modules;
 
-public class EncryptDecrypt {
+public class Encrypt {
   private int key;
   private String text;
+
 
   public String getText() {
     return text;
@@ -46,33 +47,6 @@ public class EncryptDecrypt {
       }
     }
     return encryptedText;
-  }
-  public String Decrypt(int key, String text) {
-    this.key = key;
-    this.text = text;
-
-    String decryptedText = "";
-
-
-    if (key == 0 && !text.isEmpty()) {
-      decryptedText = this.text;
-    } else if (text.isEmpty() && key >= 0 && key <= 25) {
-      decryptedText = "No text to encrypt,Enter text";
-    } else if ((text.isEmpty() || !text.isEmpty()) && (key < 0 || key > 25)) {
-      decryptedText = "Key must be a number between 0 and 25";
-    }
-
-    char[] aCharacters = this.text.toCharArray();
-
-    for (char character : aCharacters) {
-      if (!text.isEmpty() && key >= 1 && key <= 25) {
-        int valueOfChar = Character.valueOf(character) - key;
-        char shifted = (char) valueOfChar;
-
-        decryptedText += Character.toString(shifted);
-      }
-    }
-    return decryptedText;
   }
 }
 
