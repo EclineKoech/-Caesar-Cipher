@@ -4,7 +4,6 @@ public class Encrypt {
   private int key;
   private String text;
 
-
   public String getText() {
     return text;
   }
