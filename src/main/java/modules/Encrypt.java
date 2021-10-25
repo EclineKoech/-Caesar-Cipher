@@ -48,5 +48,3 @@ public class Encrypt {
     return encryptedText;
   }
 }
-
-
