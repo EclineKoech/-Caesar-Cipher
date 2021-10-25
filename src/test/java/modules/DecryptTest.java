@@ -6,20 +6,20 @@ import static org.junit.Assert.assertEquals;
 
 public class DecryptTest {
   @Test
-  public void encryptDecryptClassExists() {
-    Encrypt encryptDecrypt = new Encrypt();
-    assertEquals(true,encryptDecrypt instanceof Encrypt);
+  public void decryptEncryptClassExists() {
+    Decrypt decryptEncrypt = new Decrypt();
+    assertEquals(true,decryptEncrypt instanceof Decrypt);
   }
 
   @Test
-  public void encryptsCharacter(){
-    Encrypt encryptDecrypt = new Encrypt();
-    assertEquals("a",encryptDecrypt.Encrypt(1,"b"));
+  public void decryptsCharacter(){
+    Decrypt decryptEncrypt = new Decrypt();
+    assertEquals("z",decryptEncrypt.Decrypt(1, "x"));
   }
 
   @Test
   public void encryptsSentence() {
     Encrypt encryptDecrypt = new Encrypt();
-    assertEquals("dog", encryptDecrypt.Encrypt(2, "fqi"));
+    assertEquals("dog", encryptDecrypt.Encrypt(2, "bme"));
   }
 }

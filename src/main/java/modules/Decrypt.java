@@ -42,7 +42,7 @@ public class Decrypt {
         int valueOfChar = Character.valueOf(character) - key;
         char shifted = (char) valueOfChar;
 
-        decryptedText += Character.toString(shifted);
+        decryptedText = Character.toString(shifted);
       }
     }
     return decryptedText;

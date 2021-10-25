@@ -1,4 +1,5 @@
 package modules;
+
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -13,7 +14,7 @@ public class EncryptTest {
   @Test
   public void encryptsCharacter(){
     Encrypt encryptDecrypt = new Encrypt();
-    assertEquals("b",encryptDecrypt.Encrypt(1,"a"));
+    assertEquals("b",encryptDecrypt.Encrypt(2,"d"));
   }
 
   @Test
